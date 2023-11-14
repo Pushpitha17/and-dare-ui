@@ -1,0 +1,100 @@
+.landing {
+  background-image: url("../Assets/images/landing-bg.png");
+  background-size: cover;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.landing-content{
+  padding-bottom: 5rem;
+}
+
+.order-btn {
+  padding: 10px 24px;
+  background-color: #e6ae36;
+  border-radius: 5%;
+  width: fit-content;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bolder;
+}
+
+
+.landing-text-img {
+  height: 30vh;
+  margin: 2rem auto;
+}
+
+.landing-sub-text{
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  margin: 0;
+}
+
+.stat-container {
+  display: flex;
+  color: white;
+  padding: 1rem 5rem;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../Assets/images/Mask\ group.png");
+  width: fit-content;
+  border-radius: 2%;
+  position: absolute;
+  bottom: -4.5rem;
+}
+
+.stat-container p {
+  margin: 0;
+}
+
+.vertical-line{
+  border-left: 2px solid white;
+  height: 60px;
+  margin: 0 2rem;
+}
+
+.number-text{
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.yellow-text{
+  font-size: 2.5rem;
+  color: #e6ae36;
+  font-weight: bolder;
+}
+
+.stat {
+  width: 8ch;
+  text-align: center;
+}
+
+.landing-img-container{
+  display: flex;
+  justify-content: left;
+  height: 60vh;
+}
+
+.landing-img {
+  height: 100%;
+}
+
+.landing-content{
+  height: fit-content;
+}
+
+.leaf{
+  position: absolute;
+  height: 16rem;
+  bottom: -8rem;
+  right: 0;
+}
+
+.leaf img {
+  height: 100%;
+}

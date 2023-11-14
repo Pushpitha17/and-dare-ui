@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.header {
+  position: sticky;
+  width: 100%;
+  z-index: 3;
+  background-image: linear-gradient(
+      rgba(255, 27, 27, 0.2),
+      rgba(255, 27, 27, 0.2)
+    ),
+    url("../Assets/images/Top\ Bar.png");
+  height: 5rem;
+  font-weight: 600;
+}
+
+.nav-content {
+  width: 100%;
+  z-index: 6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.nav-link {
+  padding: 0 2rem;
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  font-style: extra-bold;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: whitesmoke;
+}
+
+.action-btn {
+  padding: 8px 24px;
+  background-color: #e6ae36;
+  border-radius: 5%;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu {
+    position: fixed;
+    display: none;
+    width: 100%;
+    top: -5rem;
+    transition: 0.3s;
+    flex-direction: column;
+    background-color: rgba(255, 27, 27);
+    transition: max-height 0.2s ease-out;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    text-align: center;
+  }
+
+  .link-container {
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.5px solid #fff;
+  }
+
+  .nav-link {
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .menu.active {
+    top: 5rem;
+    left: 0;
+    display: block;
+  }
+
+  .btn-container {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.nav-link a {
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
