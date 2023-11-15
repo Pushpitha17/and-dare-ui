@@ -1,0 +1,181 @@
+.why-us {
+  padding: 8rem 0;
+  background-color: #fff1d2;
+}
+
+.section-head-text {
+  color: #920000;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.section-head-text p {
+  margin: 0;
+}
+
+.section-desc {
+  max-width: 60ch;
+  margin: 3rem 0;
+}
+
+.learn-btn {
+  font-size: 1.2rem;
+  padding: 0.6rem 2.4rem;
+  color: #920000;
+  border: 1px solid #920000;
+  border-radius: 5%;
+  width: fit-content;
+}
+
+.learn-btn:hover {
+  color: white;
+  background-color: #920000;
+  cursor: pointer;
+}
+
+.why-img-container {
+  height: 22rem;
+  padding: 2rem 0;
+}
+
+.flavours {
+  padding: 8rem 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.falvour-img-container {
+  position: absolute;
+  left: 0;
+  top: -5%;
+  height: 110%;
+  display: flex;
+  align-items: center;
+}
+
+.falvour-img-container img {
+  max-height: 100%;
+  max-width: 40vw;
+
+}
+
+.rated-dishes {
+  padding: 8rem 0;
+  background-color: #fff1d2;
+  position: relative;
+}
+
+
+.dish-img-container{
+  width: 100%;
+}
+
+.dish-img-container img{
+  width: 100%;
+}
+
+.rated-dishes .title{
+  font-size: 1.6rem;
+  color: #920000;
+  font-weight: 600;
+}
+
+.rated-dishes .subtitle{
+  color:#920000;
+}
+
+.rated-dishes .price{
+  font-weight: bold;
+  margin: 0.6rem 0;
+}
+
+.buy-btn {
+  padding: 0.3rem 2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  background-color: #920000;
+  border: 1px solid #920000;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.buy-btn:hover {
+  color:#920000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.menu-info{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+
+.side-leaf-2 {
+  position: absolute;
+  right: 0;
+  bottom : -7rem;
+  height: 14rem;
+}
+
+
+@media (max-width: 768px) {
+  .section-head-text {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .text-logo{
+    height: 1.5rem;
+  }
+
+  .why-us{
+    padding: 2rem 0 8rem;
+    position: relative;
+  }
+
+  .why-img-container{
+    position: absolute;
+    height: 16rem;
+    right: 1rem;
+    bottom: 0rem;
+    text-align: right;
+  }
+
+  .flavours {
+    padding: 3rem 0;
+    background-color: #fff;
+    position: relative;
+  }
+  
+
+  .falvour-img-container{
+    left: 0;
+    top: auto;
+    bottom: 6rem;
+    width: 10rem;
+    height: fit-content;
+  }
+
+  .falvour-img-container img{
+    height: auto;
+    width: 100%;
+  }
+
+  .flavours .section-desc{
+    padding-left: 8rem;
+  }
+
+  .dish-img-container{
+    text-align: center;
+  }
+
+  .dish-img-container img{
+    width: 50%;
+  }
+  
+}

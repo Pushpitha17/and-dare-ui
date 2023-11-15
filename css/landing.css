@@ -5,7 +5,7 @@
   position: relative;
 }
 
-.landing-content{
+.landing-content {
   padding-bottom: 5rem;
 }
 
@@ -19,13 +19,12 @@
   font-weight: bolder;
 }
 
-
 .landing-text-img {
   height: 30vh;
   margin: 2rem auto;
 }
 
-.landing-sub-text{
+.landing-sub-text {
   color: white;
   font-weight: 500;
   font-size: 1.2rem;
@@ -37,10 +36,7 @@
   display: flex;
   color: white;
   padding: 1rem 5rem;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../Assets/images/Mask\ group.png");
   width: fit-content;
   border-radius: 2%;
@@ -52,18 +48,18 @@
   margin: 0;
 }
 
-.vertical-line{
+.vertical-line {
   border-left: 2px solid white;
   height: 60px;
   margin: 0 2rem;
 }
 
-.number-text{
+.number-text {
   font-size: 2.5rem;
   font-weight: bolder;
 }
 
-.yellow-text{
+.yellow-text {
   font-size: 2.5rem;
   color: #e6ae36;
   font-weight: bolder;
@@ -74,7 +70,7 @@
   text-align: center;
 }
 
-.landing-img-container{
+.landing-img-container {
   display: flex;
   justify-content: left;
   height: 60vh;
@@ -84,11 +80,11 @@
   height: 100%;
 }
 
-.landing-content{
+.landing-content {
   height: fit-content;
 }
 
-.leaf{
+.leaf {
   position: absolute;
   height: 16rem;
   bottom: -8rem;
@@ -97,4 +93,52 @@
 
 .leaf img {
   height: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+  .landing-img-container{
+    display: none;
+  }
+
+  .stat-container{
+    position: static;
+  }
+
+  .section-head-text{
+    width : 100%;
+  }
+
+  .stat-container{
+    padding: 1rem 2rem;
+    margin: 0 auto;
+  }
+
+  .landing-text {
+    height: auto;
+    width: 100%;
+  }
+
+  .landing-text-img{
+    width: 100;
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .landing-content {
+    padding-bottom: 2rem;
+  }
+
+  .landing{
+    padding-bottom: 6rem;
+  }
+
+  .leaf {
+    position: absolute;
+    height: 8rem;
+    bottom: -4rem;
+    right: 0;
+    z-index: 6;
+  }
 }
