@@ -7,7 +7,7 @@
   color: #920000;
   font-size: 3rem;
   font-weight: bold;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
 
@@ -22,10 +22,10 @@
 
 .learn-btn {
   font-size: 1.2rem;
-  padding: 0.6rem 2.4rem;
+  padding: 0.4rem 1.6rem;
   color: #920000;
   border: 1px solid #920000;
-  border-radius: 5%;
+  border-radius: 8px;
   width: fit-content;
 }
 
@@ -58,7 +58,6 @@
 .falvour-img-container img {
   max-height: 100%;
   max-width: 40vw;
-
 }
 
 .rated-dishes {
@@ -67,26 +66,25 @@
   position: relative;
 }
 
-
-.dish-img-container{
+.dish-img-container {
   width: 100%;
 }
 
-.dish-img-container img{
+.dish-img-container img {
   width: 100%;
 }
 
-.rated-dishes .title{
+.rated-dishes .title {
   font-size: 1.6rem;
   color: #920000;
   font-weight: 600;
 }
 
-.rated-dishes .subtitle{
-  color:#920000;
+.rated-dishes .subtitle {
+  color: #920000;
 }
 
-.rated-dishes .price{
+.rated-dishes .price {
   font-weight: bold;
   margin: 0.6rem 0;
 }
@@ -103,25 +101,77 @@
 }
 
 .buy-btn:hover {
-  color:#920000;
+  color: #920000;
   background-color: #fff;
   cursor: pointer;
 }
 
-.menu-info{
+.menu-info {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-
-
 .side-leaf-2 {
   position: absolute;
   right: 0;
-  bottom : -7rem;
+  bottom: -7rem;
   height: 14rem;
+  z-index: 10;
 }
 
+.testimonials {
+  padding: 8rem 0 4rem;
+  position: relative;
+}
+
+.testimonial-container {
+  background-image: url('../Assets/images/testimonial-bg.png');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  min-height: 24rem;
+}
+
+.testimonial-item{
+  width: 60%;
+  margin: 6rem auto 2rem;
+  padding-left: 4rem;
+  font-weight: bold;
+}
+
+.testimonial-name {
+  color: #920000;
+  margin-bottom: 0.5rem;
+}
+
+.rating-container {
+  width: 10rem;
+  margin: 1rem 0;
+}
+
+.rating-container img {
+  width: 100%;
+}
+
+.person-container{
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.person-container img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+
+.testimonial-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 @media (max-width: 768px) {
   .section-head-text {
@@ -129,16 +179,16 @@
     font-weight: 900;
   }
 
-  .text-logo{
+  .text-logo {
     height: 1.5rem;
   }
 
-  .why-us{
+  .why-us {
     padding: 2rem 0 8rem;
     position: relative;
   }
 
-  .why-img-container{
+  .why-img-container {
     position: absolute;
     height: 16rem;
     right: 1rem;
@@ -151,9 +201,8 @@
     background-color: #fff;
     position: relative;
   }
-  
 
-  .falvour-img-container{
+  .falvour-img-container {
     left: 0;
     top: auto;
     bottom: 6rem;
@@ -161,21 +210,35 @@
     height: fit-content;
   }
 
-  .falvour-img-container img{
+  .falvour-img-container img {
     height: auto;
     width: 100%;
   }
 
-  .flavours .section-desc{
+  .flavours .section-desc {
     padding-left: 8rem;
   }
 
-  .dish-img-container{
+  .dish-img-container {
     text-align: center;
   }
 
-  .dish-img-container img{
+  .dish-img-container img {
     width: 50%;
   }
-  
+
+  .testimonial-container{
+    background-image: none;
+  }
+  .testimonial-item{
+    width: 90%;
+    padding: 0;
+    border: 1px solid #920000 ;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .testimonial-imgs{
+    align-items: center;
+  }
 }

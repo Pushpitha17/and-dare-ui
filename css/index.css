@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #f4f4f4;
 }
 
@@ -28,7 +28,7 @@ a {
       rgba(255, 27, 27, 0.2),
       rgba(255, 27, 27, 0.2)
     ),
-    url("../Assets/images/Top\ Bar.png");
+    url('../Assets/images/Top\ Bar.png');
   height: 5rem;
   font-weight: 600;
 }
@@ -80,6 +80,27 @@ a {
   padding: 8px 24px;
   background-color: #e6ae36;
   border-radius: 5%;
+}
+
+.footer-bar {
+  position: relative;
+  height: 6rem;
+  background-image: url("../Assets/images/footer-bar.png");
+  background-repeat: repeat;
+}
+
+.flower-left {
+  position: absolute;
+  height: 8.5rem;
+  left: 0;
+  top: -1.25rem;
+}
+
+.flower-right {
+  position: absolute;
+  height: 8.5rem;
+  right: 0;
+  top: -1.25rem;
 }
 
 @media (max-width: 768px) {
@@ -141,6 +162,16 @@ a {
     padding: 24px;
     display: flex;
     justify-content: center;
+  }
+
+  .footer-bar {
+    height: 4rem;
+  }
+
+  .flower-left,
+  .flower-right {
+    height: 5rem;
+    top:-0.5rem
   }
 }
 
