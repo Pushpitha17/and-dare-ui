@@ -1,0 +1,6 @@
+.landing-menu {
+  background-image: url("../Assets/images/landing-bg.png");
+  background-size: cover;
+  padding: 2rem 0;
+  position: relative;
+}
