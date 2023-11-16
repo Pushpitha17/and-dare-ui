@@ -36,8 +36,9 @@
   display: flex;
   color: white;
   padding: 1rem 5rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../Assets/images/Mask\ group.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+    url("../Assets/images/stat-bg.png");
+  background-size: cover;
   width: fit-content;
   border-radius: 2%;
   position: absolute;

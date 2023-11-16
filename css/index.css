@@ -24,11 +24,14 @@ a {
   position: sticky;
   width: 100%;
   z-index: 3;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       rgba(255, 27, 27, 0.2),
       rgba(255, 27, 27, 0.2)
     ),
-    url('../Assets/images/Top\ Bar.png');
+    url('../Assets/images/top-bar.png'); */
+  background-image: url('../Assets/images/top-bar.png');
+  background-position: center;
+  background-size: cover;
   height: 5rem;
   font-weight: 600;
 }
@@ -36,10 +39,6 @@ a {
 .nav-content {
   width: 100%;
   z-index: 6;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .menu {
@@ -47,6 +46,7 @@ a {
   align-items: center;
   justify-content: space-between;
   min-width: 60%;
+  color: white;
 }
 
 .nav-link {
@@ -85,7 +85,7 @@ a {
 .footer-bar {
   position: relative;
   height: 6rem;
-  background-image: url("../Assets/images/footer-bar.png");
+  background-image: url('../Assets/images/footer-bar.png');
   background-repeat: repeat;
 }
 
@@ -101,6 +101,72 @@ a {
   height: 8.5rem;
   right: 0;
   top: -1.25rem;
+}
+
+/* footer */
+footer {
+  background-color: #900017;
+  color: white;
+  padding: 4rem 0;
+  font-size: 0.6rem;
+}
+
+.footer-logo-container {
+  width: 8rem;
+}
+
+.footer-headtext {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0 0 1rem;
+}
+
+.contact-item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.contact-item-icon {
+  margin-right: 1.5rem;
+}
+
+.footer-page-links {
+  padding-left: 3rem;
+}
+
+.footer-input input {
+  padding: 0.3rem 0.6rem;
+  border-radius: 1px;
+  width: 100%;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.footer-submit-btn {
+  padding: 0.3rem 0.6rem;
+  border-radius: 1px;
+  border: none;
+  background-color: #0a84ff;
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.social-links img {
+  margin-right: 1rem;
+}
+
+.footer-subtext {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtext-links span {
+  margin-left: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -171,7 +237,41 @@ a {
   .flower-left,
   .flower-right {
     height: 5rem;
-    top:-0.5rem
+    top: -0.5rem;
+  }
+
+  footer {
+    padding: 2rem 0 0.5rem;
+  }
+
+  .footer-headtext {
+    margin: 1rem 0;
+  }
+
+  .footer-content {
+    flex-direction: column-reverse;
+  }
+
+  .footer-page-links , .subtext-links {
+    display: none;
+  } 
+  
+  .footer-logo-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .footer-follow{
+    margin-bottom: 2rem;
+  }
+
+  .footer-subtext{
+    display: flex;
+    justify-content: center;
+    margin: 0;
   }
 }
 
