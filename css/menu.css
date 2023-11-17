@@ -1,6 +1,223 @@
-.landing-menu {
-  background-image: url("../Assets/images/landing-bg.png");
+.menu-landing {
+  background-image: url('../Assets/images/landing-bg.png');
   background-size: cover;
-  padding: 2rem 0;
+  padding: 3rem 0;
   position: relative;
+  color: white;
+}
+
+.landing-img-container {
+  position: relative;
+  height: 100%;
+  min-height: 15rem;
+}
+
+.landing-img-container img {
+  width: 90%;
+  position: absolute;
+  right: 0;
+  bottom: -8rem;
+}
+
+.landing-stat-number,
+.landing-stat-mark {
+  font-family: 'Moon Dance';
+  font-size: 10rem;
+  line-height: 10rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.landing-stat-mark {
+  color: #e6ae36;
+}
+
+.landing-stat-text {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.landing-title {
+  color: #e6ae36;
+  font-size: 11rem;
+  line-height: 11rem;
+  font-weight: 600;
+}
+
+.landing-sub-text {
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  margin: 0;
+}
+
+.top-rated-section {
+  padding: 5rem 0 3rem;
+}
+
+.section-head-text {
+  color: #920000;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.section-head-text p {
+  margin: 0;
+}
+
+.dish-img-container {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.dish-img-container img {
+  width: 100%;
+}
+
+.menu-item {
+  margin-bottom: 2rem;
+}
+
+.menu-item .title {
+  font-size: 1.6rem;
+  color: #920000;
+  font-weight: 600;
+}
+
+.menu-item .subtitle {
+  color: #920000;
+}
+
+.menu-item .price {
+  font-weight: bold;
+  margin: 0.6rem 0;
+}
+
+.menu-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.buy-btn {
+  padding: 0.5rem 3rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  background-color: #920000;
+  border: 1px solid #920000;
+  border-radius: 0.5rem;
+  width: fit-content;
+}
+
+.buy-btn:hover {
+  color: #920000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.other-dishes-section {
+  background-color: #fff1d2;
+  padding: 6rem 0;
+}
+
+section {
+  position: relative;
+}
+
+.leaf-container-bottom,
+.leaf-container-top {
+  position: absolute;
+  height: 20rem;
+  bottom: -10rem;
+  z-index: 20;
+}
+
+.leaf-container-bottom {
+  right: 0;
+}
+
+.leaf-container-top {
+  left: 0;
+}
+
+.beverages-desserts-section {
+  padding: 6rem 0;
+}
+
+.menu-side-item {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.menu-side-item .title {
+  font-size: 1.6rem;
+  color: #920000;
+  font-weight: 600;
+}
+
+.menu-side-item .price {
+  font-weight: bold;
+}
+
+.menu-side-item .item-info-action {
+  display: flex;
+  align-items: center;
+}
+
+.menu-side-item .add-btn-container {
+  margin-left: 1rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: white;
+
+}
+
+.menu-side-item .add-btn-container .add-btn {
+  background-color: #920000;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.3rem;
+}
+
+.menu-side-item .add-btn-container .add-btn:hover {
+  background-color: white;
+  border: 1px solid #920000;
+  color: #920000;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .landing-stat-number,
+  .landing-stat-mark {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .landing-title {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .landing-img-container img {
+    width: 100%;
+  }
+
+  .section-head-text {
+    line-height: 3.5rem;
+    text-align: center;
+  }
+
+  .leaf-container-bottom,
+  .leaf-container-top {
+    height: 12rem;
+    bottom: -6rem;
+  }
 }

@@ -58,6 +58,7 @@
 .falvour-img-container img {
   max-height: 100%;
   max-width: 40vw;
+  z-index: 15;
 }
 
 .rated-dishes {
@@ -131,7 +132,7 @@
   height: 100%;
   display: grid;
   place-items: center;
-  min-height: 24rem;
+  min-height: 30rem;
 }
 
 .testimonial-item{

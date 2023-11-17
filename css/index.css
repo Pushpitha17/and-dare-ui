@@ -45,7 +45,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 60%;
   color: white;
 }
 
@@ -80,7 +79,9 @@ a {
 .action-btn {
   padding: 8px 24px;
   background-color: #e6ae36;
-  border-radius: 5%;
+  border-radius: 0.625rem;  
+  color: white ;
+
 }
 
 .footer-bar {
@@ -198,6 +199,7 @@ footer {
     transition: max-height 0.2s ease-out;
   }
 
+
   .nav-links {
     flex-direction: column;
     width: 100%;
@@ -225,10 +227,8 @@ footer {
     display: block;
   }
 
-  .btn-container {
-    padding: 24px;
-    display: flex;
-    justify-content: center;
+  .nav-btn-container {
+    display: none;
   }
 
   .footer-bar {
@@ -286,6 +286,6 @@ footer {
   display: block;
   float: left;
   font-size: 2em;
-  padding: 10px 20px;
+  padding: 0.625rem 0;
   text-decoration: none;
 }
