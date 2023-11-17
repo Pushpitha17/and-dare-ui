@@ -68,7 +68,9 @@
 }
 
 .signup-submit-btn:hover {
-
+  background-color: white;
+  border: 1px #920000 solid;
+  color: #920000
 }
 
 .already-has {
