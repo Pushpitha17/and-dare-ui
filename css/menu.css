@@ -1,4 +1,4 @@
-.menu-landing {
+.menu-landing, .about-landing {
   background-image: url('../Assets/images/landing-bg.png');
   background-size: cover;
   padding: 3rem 0;
@@ -22,8 +22,8 @@
 .landing-stat-number,
 .landing-stat-mark {
   font-family: 'Moon Dance';
-  font-size: 10rem;
-  line-height: 10rem;
+  font-size: 8.5rem;
+  line-height: 8.5rem;
   font-style: normal;
   font-weight: 400;
 }
@@ -40,8 +40,8 @@
 
 .landing-title {
   color: #e6ae36;
-  font-size: 11rem;
-  line-height: 11rem;
+  font-size: 9rem;
+  line-height: 9rem;
   font-weight: 600;
 }
 
@@ -178,7 +178,6 @@ section {
   font-size: 2rem;
   line-height: 2rem;
   color: white;
-
 }
 
 .menu-side-item .add-btn-container .add-btn {
@@ -207,7 +206,8 @@ section {
   }
 
   .landing-img-container img {
-    width: 100%;
+    width: 80%;
+    right:10%;
   }
 
   .section-head-text {
