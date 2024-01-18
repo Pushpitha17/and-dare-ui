@@ -37,23 +37,39 @@
               <div class="">
                 <div class="nav-links d-flex">
                   <div class="link-container">
-                    <a href="#work" class="nav-link">Home</a>
+                    <nav>
+                      <a href="./index.html" class="nav-link">Home</a>
+                    </nav>
                   </div>
                   <div class="link-container">
-                    <a href="#work" class="nav-link">About</a>
+                    <nav>
+                      <a href="./about.html" class="nav-link">About</a>
+                    </nav>
                   </div>
                   <div class="link-container">
-                    <a href="#work" class="nav-link">Menu</a>
+                    <nav>
+                      <a href="./menu.html" class="nav-link">Menu</a>
+                    </nav>
                   </div>
                   <div class="link-container">
-                    <a href="#work" class="nav-link">Contact</a>
+                    <nav>
+                      <a href="./signin.html" class="nav-link">Contact</a>
+                    </nav>
                   </div>
+                  <div class="link-container-btn">
+                    <a href="signin.html" class="nav-link-btn"> Sign Up </a>
+                  </div>
+                  <div class="link-container"></div>
                 </div>
               </div>
             </div>
-            <div class="nav-btn-container">
-              <div class="action-btn">Sign up</div>
-            </div>
+            <a href="signin.html">
+              <div class="nav-btn-container">
+                <div class="action-btn">
+                  Sign up
+                </div>
+              </div>
+            </a>
             <div class="hamburger">
               <span class="bar"></span>
               <span class="bar"></span>
@@ -66,60 +82,70 @@
     <main>
       <section class="signup-form-section">
         <div class="container">
-          <form action="" class="signup-form">
-            <div class="form-logo">
-              <img src="./Assets/images/form-logo.png" alt="" />
-            </div>
-            <div class="row form-row">
-              <div class="col-md-6 form-field-l">
-                <div class="label"><label for="fname">First name</label></div>
-                <div class="input">
-                  <input type="text" id="fname" name="fname" value="" />
+          <div class="signup-form">
+            <form action="">
+              <div class="form-logo">
+                <img src="./Assets/images/form-logo.png" alt="" />
+              </div>
+              <div class="row form-row">
+                <div class="col-md-6 form-field-l">
+                  <div class="label"><label for="fname">First name</label></div>
+                  <div class="input">
+                    <input type="text" id="fname" name="fname" value="" />
+                  </div>
+                </div>
+                <div class="col-md-6 form-field-r">
+                  <div class="label"><label for="fname">Last Name</label></div>
+                  <div class="input">
+                    <input type="text" id="fname" name="fname" value="" />
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6 form-field-r">
-                <div class="label"><label for="fname">Last Name</label></div>
-                <div class="input">
-                  <input type="text" id="fname" name="fname" value="" />
+              <div class="row form-row">
+                <div class="col-md-6 form-field-l">
+                  <div class="label"><label for="fname">Email</label></div>
+                  <div class="input">
+                    <input type="email" id="fname" name="fname" value="" />
+                  </div>
+                </div>
+                <div class="col-md-6 form-field-r">
+                  <div class="label">
+                    <label for="fname">Phone Number</label>
+                  </div>
+                  <div class="input">
+                    <input type="number" id="fname" name="fname" value="" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row form-row">
-              <div class="col-md-6 form-field-l">
-                <div class="label"><label for="fname">Email</label></div>
-                <div class="input">
-                  <input type="text" id="fname" name="fname" value="" />
+              <div class="row form-row">
+                <div class="col-md-6 form-field-l">
+                  <div class="label"><label for="fname">password</label></div>
+                  <div class="input">
+                    <input type="password" id="fname" name="fname" value="" />
+                  </div>
+                </div>
+                <div class="col-md-6 form-field-r">
+                  <div class="label">
+                    <label for="fname">re-passowrd</label>
+                  </div>
+                  <div class="input">
+                    <input type="password" id="fname" name="fname" value="" />
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6 form-field-r">
-                <div class="label"><label for="fname">Phone Number</label></div>
-                <div class="input">
-                  <input type="text" id="fname" name="fname" value="" />
-                </div>
+              <div class="signup-submit">
+                <input
+                  type="submit"
+                  value="Sign Up"
+                  class="signup-submit-btn"
+                />
               </div>
-            </div>
-            <div class="row form-row">
-              <div class="col-md-6 form-field-l">
-                <div class="label"><label for="fname">password</label></div>
-                <div class="input">
-                  <input type="text" id="fname" name="fname" value="" />
-                </div>
+              <div class="already-has">
+                <span>Already has a account ?</span>
+                <strong>sign in</strong>
               </div>
-              <div class="col-md-6 form-field-r">
-                <div class="label"><label for="fname">re-passowrd</label></div>
-                <div class="input">
-                  <input type="text" id="fname" name="fname" value="" />
-                </div>
-              </div>
-            </div>
-            <div class="signup-submit">
-              <input type="submit" value="Sign Up" class="signup-submit-btn"/>
-            </div>
-            <div class="already-has">
-              <span>Already has a account ?</span>
-              <strong>sign in</strong>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </section>
     </main>

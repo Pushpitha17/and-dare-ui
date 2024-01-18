@@ -54,6 +54,7 @@ a {
   overflow: hidden;
   display: flex;
   transition: 0.7s ease;
+  text-align: center;
 }
 
 .nav-link:hover {
@@ -171,6 +172,10 @@ footer {
   margin-left: 1rem;
 }
 
+.link-container-btn{
+  display: none;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -186,6 +191,13 @@ footer {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .link-container-btn{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .menu {
@@ -216,9 +228,20 @@ footer {
     border-bottom: 0.5px solid #fff;
   }
 
-  .nav-link {
+  .nav-link  {
     margin: 2rem 0;
     text-align: center;
+  }
+
+  .nav-link-btn{
+    padding: 0 2rem;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    transition: 0.7s ease;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .menu.active {
@@ -274,6 +297,10 @@ footer {
     justify-content: center;
     margin: 0;
   }
+
+  .nav-link-btn{
+    margin: 2rem;
+  }
 }
 
 .nav-link a {
@@ -289,3 +316,5 @@ footer {
   padding: 0.625rem 0;
   text-decoration: none;
 }
+
+

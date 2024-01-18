@@ -28,7 +28,6 @@
   align-items: flex-end;
 }
 
-
 .form-logo {
   width: 100%;
   text-align: center;
@@ -70,11 +69,33 @@
 .signup-submit-btn:hover {
   background-color: white;
   border: 1px #920000 solid;
-  color: #920000
+  color: #920000;
 }
 
 .already-has {
   text-align: center;
   font-size: 0.75rem;
   margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .form-field-r,
+  .form-field-l {
+    align-items: center;
+  }
+
+  .signup-form {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .label,
+  .input {
+    width: 100%;
+  }
+
+  .input input {
+    width: 100%;
+  }
+
 }
